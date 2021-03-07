@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             darkTheme: AppTheme.darkTheme,
             onGenerateRoute: router.generateRoute,
             themeMode: value.isDark ? ThemeMode.dark : ThemeMode.light,
-            home: LogIn(),
+            home: Home()//LogIn(),
           );
         },
       ),

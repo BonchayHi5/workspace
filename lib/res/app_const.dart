@@ -11,7 +11,18 @@ class AppConstants {
   static const kDefaultPadding = 8.0;
   static const appBarEvelation = 0.0;
 
+  //shape
+  static const navItemH = 80.0;
+
 
   //route name
   static const String HomeScreen = '/home';
+
+
+  //bottom navigation button name
+  static const String dashBoard = 'DASHBOARD';
+  static const String project = 'PROJECT';
+  static const String myTask = 'MY TASK';
+  static const String schedule = 'SCHEDULE';
+  static const String settings = 'SETTINGS';
 }

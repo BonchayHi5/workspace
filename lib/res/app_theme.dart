@@ -15,7 +15,10 @@ class AppTheme with ChangeNotifier {
     primaryColor: AppColors.primaryColor,
     accentColor: Colors.orange[800],
     backgroundColor: AppColors.backgroundColor,
+    scaffoldBackgroundColor: AppColors.backgroundColor,
     iconTheme: IconThemeData(color: AppColors.primaryColor),
+    primaryIconTheme: IconThemeData(color: AppColors.primaryColor),
+    accentIconTheme: IconThemeData(color: AppColors.textColor),
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.backgroundColor,
       elevation: AppConstants.appBarEvelation,
