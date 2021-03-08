@@ -28,7 +28,7 @@ class Dashboard extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.topCenter,
-              child: Container(
+              child: SizedBox(
                 height: 400,
                 width: MediaQuery.of(context).size.width * 0.2,
                 child: Card(

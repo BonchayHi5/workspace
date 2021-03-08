@@ -5,11 +5,10 @@ import 'package:workspace/ui/screen/home.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    case AppConstants.HomeScreen:
+    case AppConstants.homeScreen:
       return MaterialPageRoute(
         builder: (context) => Home(),
       );
-      break;
     default:
       return MaterialPageRoute(
         builder: (context) => LogIn(),

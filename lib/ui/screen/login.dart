@@ -15,32 +15,29 @@ class LogIn extends StatelessWidget {
             padding: const EdgeInsets.symmetric(
               horizontal: AppConstants.kDefaultPadding,
             ),
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                'Don\'t have an account',
-                style: Theme.of(context).textTheme.subtitle1,
-              ),
+            child: Text(
+              "Don't have an account",
+              style: Theme.of(context).textTheme.subtitle1,
             ),
           ),
         ],
       ),
       body: Center(
         child: SingleChildScrollView(
-          child: Container(
+          child: SizedBox(
             width: 300,
             child: Center(
               child: Form(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TextFieldCustom(
+                    const TextFieldCustom(
                       labelText: 'Username',
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppConstants.kDefaultPadding + 2,
                     ),
-                    TextFieldCustom(
+                    const TextFieldCustom(
                       labelText: 'Password',
                     ),
                     Container(
@@ -51,12 +48,12 @@ class LogIn extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.check_box,
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(
+                                padding: EdgeInsets.only(
                                   left: AppConstants.kDefaultPadding - 3,
                                 ),
                                 child: Text(
@@ -65,17 +62,17 @@ class LogIn extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             height: 40,
                             width: 100,
                             child: ElevatedButton(
                               onPressed: () {
                                 Navigator.pushNamed(
                                   context,
-                                  AppConstants.HomeScreen,
+                                  AppConstants.homeScreen,
                                 );
                               },
-                              child: Text(
+                              child: const Text(
                                 'LOGIN',
                               ),
                             ),

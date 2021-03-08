@@ -9,7 +9,7 @@ class NavItem extends StatelessWidget {
   final String? label;
   final Function? onTap;
 
-  NavItem({
+  const NavItem({
     this.iconColor,
     this.trailingColor,
     this.backgroundColor,

@@ -16,7 +16,7 @@ class AppConstants {
 
 
   //route name
-  static const String HomeScreen = '/home';
+  static const String homeScreen = '/home';
 
 
   //bottom navigation button name

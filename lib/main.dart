@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:workspace/res/app_theme.dart';
-import 'export.dart';
 import 'core/route/router.dart' as router;
+import 'export.dart';
 
 void main() {
   runApp(MyApp());

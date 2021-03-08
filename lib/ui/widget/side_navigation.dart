@@ -4,7 +4,7 @@ import 'package:workspace/export.dart';
 class SideNavigation extends StatefulWidget {
   final PageController pageController;
 
-  SideNavigation({required this.pageController});
+  const SideNavigation({required this.pageController});
   @override
   _SideNavigationState createState() => _SideNavigationState();
 }
@@ -19,7 +19,7 @@ class _SideNavigationState extends State<SideNavigation> {
 
     widget.pageController.animateToPage(
       index,
-      duration: Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 200),
       curve: Curves.easeInOut,
     );
   }
@@ -33,8 +33,8 @@ class _SideNavigationState extends State<SideNavigation> {
       width: MediaQuery.of(context).size.width * 0.08,
       child: Column(
         children: [
-          FlutterLogo(size: 80),
-          SizedBox(height: AppConstants.kDefaultPadding * 4),
+          const FlutterLogo(size: 80),
+          const SizedBox(height: AppConstants.kDefaultPadding * 4),
           NavItem(
             label: _index == 0 ? AppConstants.dashBoard : null,
             icon: Icons.dashboard,

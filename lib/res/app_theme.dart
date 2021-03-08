@@ -6,7 +6,7 @@ class AppTheme with ChangeNotifier {
 
   void changeThemeMode() {
     isDark = !isDark;
-    print(isDark);
+    debugPrint('$isDark');
     notifyListeners();
   }
 
@@ -16,14 +16,14 @@ class AppTheme with ChangeNotifier {
     accentColor: Colors.orange[800],
     backgroundColor: AppColors.backgroundColor,
     scaffoldBackgroundColor: AppColors.backgroundColor,
-    iconTheme: IconThemeData(color: AppColors.primaryColor),
-    primaryIconTheme: IconThemeData(color: AppColors.primaryColor),
-    accentIconTheme: IconThemeData(color: AppColors.textColor),
-    appBarTheme: AppBarTheme(
+    iconTheme: const IconThemeData(color: AppColors.primaryColor),
+    primaryIconTheme: const IconThemeData(color: AppColors.primaryColor),
+    accentIconTheme: const IconThemeData(color: AppColors.textColor),
+    appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.backgroundColor,
       elevation: AppConstants.appBarEvelation,
     ),
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       headline5: TextStyle(
         fontSize: AppConstants.headline5,
         color: AppColors.textColor,

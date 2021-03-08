@@ -3,7 +3,8 @@ import 'package:workspace/export.dart';
 
 class TextFieldCustom extends StatelessWidget {
   final String? labelText;
-  TextFieldCustom({this.labelText});
+  const TextFieldCustom({this.labelText});
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -12,13 +13,13 @@ class TextFieldCustom extends StatelessWidget {
           borderSide: BorderSide(
             color: Theme.of(context).accentColor,
           ),
-          borderRadius: BorderRadius.all(
+          borderRadius: const BorderRadius.all(
             Radius.circular(
               AppConstants.kDefaultPadding,
             ),
           ),
         ),
-        enabledBorder: OutlineInputBorder(
+        enabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(
             color: AppColors.primaryColor,
           ),
