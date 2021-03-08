@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:workspace/export.dart';
 
 class NavItem extends StatelessWidget {
-  final Color iconColor;
-  final Color trailingColor;
-  final Color backgroundColor;
-  final IconData icon;
-  final String label;
-  final Function onTap;
+  final Color? iconColor;
+  final Color? trailingColor;
+  final Color? backgroundColor;
+  final IconData? icon;
+  final String? label;
+  final Function? onTap;
 
   NavItem({
     this.iconColor,
@@ -21,7 +21,7 @@ class NavItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: onTap as void Function()?,
       child: Container(
         height: AppConstants.navItemH,
         width: MediaQuery.of(context).size.width,
@@ -43,7 +43,7 @@ class NavItem extends StatelessWidget {
                   child: label == null
                       ? Container()
                       : Text(
-                          label,
+                          label!,
                           style: Theme.of(context).textTheme.button,
                         ),
                 ),

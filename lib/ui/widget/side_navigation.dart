@@ -4,7 +4,7 @@ import 'package:workspace/export.dart';
 class SideNavigation extends StatefulWidget {
   final PageController pageController;
 
-  SideNavigation({@required this.pageController});
+  SideNavigation({required this.pageController});
   @override
   _SideNavigationState createState() => _SideNavigationState();
 }

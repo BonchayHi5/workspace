@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:workspace/export.dart';
 
 class TextFieldCustom extends StatelessWidget {
-  final String labelText;
+  final String? labelText;
   TextFieldCustom({this.labelText});
   @override
   Widget build(BuildContext context) {
