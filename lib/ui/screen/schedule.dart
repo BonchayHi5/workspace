@@ -3,6 +3,13 @@ import 'package:flutter/material.dart';
 class Schedule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Center(
+        child: Text(
+          'Schedule',
+          style: Theme.of(context).textTheme.headline5,
+        ),
+      ),
+    );
   }
 }
