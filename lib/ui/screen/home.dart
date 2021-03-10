@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:workspace/export.dart';
 
 class Home extends StatelessWidget {
@@ -17,6 +18,12 @@ class Home extends StatelessWidget {
             child: PageView(
               scrollDirection: Axis.vertical,
               controller: _pageController,
+              onPageChanged: (value) {
+                Provider.of<SideNavigationProvider>(
+                  context,
+                  listen: false,
+                ).pageChange(value);
+              },
               children: [
                 Dashboard(),
                 Project(),

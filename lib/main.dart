@@ -16,6 +16,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<AppTheme>(
           create: (context) => AppTheme(),
         ),
+        ChangeNotifierProvider<SideNavigationProvider>(
+          create: (context) => SideNavigationProvider(),
+        ),
       ],
       child: Consumer<AppTheme>(
         builder: (context, value, child) {

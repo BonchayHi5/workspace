@@ -31,23 +31,6 @@ class Dashboard extends StatelessWidget {
               child: SizedBox(
                 height: 400,
                 width: MediaQuery.of(context).size.width * 0.2,
-                child: Card(
-                  child: Container(
-                    color: Colors.red,
-                    margin: const EdgeInsets.only(
-                      right: AppConstants.kDefaultPadding * 4,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Notification',
-                          style: Theme.of(context).textTheme.subtitle1,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
               ),
             ),
           ],

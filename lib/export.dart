@@ -1,3 +1,4 @@
+export 'core/provider/side_navigation_provider.dart';
 export 'core/route/router.dart';
 export 'res/app_colors.dart';
 export 'res/app_const.dart';
