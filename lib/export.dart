@@ -11,6 +11,7 @@ export 'ui/screen/project.dart';
 export 'ui/screen/schedule.dart';
 export 'ui/screen/settings.dart';
 export 'ui/widget/button.c.dart';
+export 'ui/widget/item_card.dart';
 export 'ui/widget/nav_item.dart';
 export 'ui/widget/responsive.dart';
 export 'ui/widget/side_navigation.dart';
